@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/extraFragment">
+
+    <fragment
+        android:id="@+id/extraFragment"
+        android:name="com.arima.practica1.ExtraFragment"
+        android:label="fragment_extra"
+        tools:layout="@layout/fragment_extra" />
+    <fragment
+        android:id="@+id/modelFragment"
+        android:name="com.arima.practica1.ModuleFragment"
+        android:label="fragment_model"
+        tools:layout="@layout/fragment_module" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.arima.practica1.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.arima.practica1.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_extraFragment"
+            app:destination="@id/extraFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_modelFragment"
+            app:destination="@id/modelFragment" />
+    </fragment>
+</navigation>
