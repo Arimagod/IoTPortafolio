@@ -2,6 +2,13 @@
     <string name="app_name">Practica1</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_p1">First Practice</string>
+
+    <string name="nav_open">open</string>
+    <string name="nav_close">close</string>
+
     <string-array name="options">
         <item>
             1
